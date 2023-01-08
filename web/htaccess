@@ -1,0 +1,9 @@
+<filesMatch "\.json$">
+	FileETag None
+	<IfModule mod_headers.c>
+		Header Set Pragma "no-cache"
+		Header Set Expires "Thu, 1 Jan 1970 00:00:00 GMT"
+		Header Set Cache-Control "max-age=0, no-store, no-cache, must-revalidate"
+		Header Unset ETag
+	</IfModule>
+</filesMatch>

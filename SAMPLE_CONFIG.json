@@ -1,0 +1,89 @@
+{
+    "current_animation": "rainbows",
+    "spooky_rainbows": {
+        "hue_start": 30,
+        "hue_end": 140,
+        "speed": 0.3
+    },
+    "cheerlights": {
+        "refresh_interval": 120
+    },
+    "fire": {},
+    "snow": {
+        "snow_intensity": 0.0002,
+        "background_colour": [
+            30,
+            50,
+            50
+        ],
+        "snow_colour": [
+            240,
+            255,
+            255
+        ],
+        "fade_up_speed": 255,
+        "fade_down_speed": 1
+    },
+    "sparkles": {
+        "sparkle_intensity": 0.005,
+        "background_colour": [
+            50,
+            50,
+            0
+        ],
+        "sparkle_colour": [
+            255,
+            255,
+            0
+        ],
+        "fade_up_speed": 2,
+        "fade_down_speed": 2
+    },
+    "alternating_blinkies": {
+        "hue1": 40,
+        "hue2": 285,
+        "brightness": 0.5,
+        "speed": 1
+    },
+    "pulse": {
+        "colour": 0.5,
+        "adjust_brightness": false,
+        "adjust_saturation": false
+    },
+    "rainbows": {
+        "speed": 20,
+        "updates": 60,
+        "brightness": 50
+    },
+    "tree": {
+        "tree_colour": [
+            0.34,
+            1,
+            0.6
+        ],
+        "light_ratio": 8,
+        "light_colours": [
+            [
+                0,
+                1,
+                1
+            ],
+            [
+                0.1,
+                1,
+                1
+            ],
+            [
+                0.6,
+                1,
+                1
+            ],
+            [
+                0.85,
+                0.4,
+                1
+            ]
+        ],
+        "light_change_chance": 0.5
+    }
+}
