@@ -1,7 +1,5 @@
 $(document).ready(function() {
 	$.getJSON('config.json', function(config_json) {
-		console.log(config_json);
-
 		var $anim = $('#animation');
 		$anim.empty().append(function() {
 			var options = '';
@@ -13,14 +11,12 @@ $(document).ready(function() {
 			return options;
 		});
 		$anim.change(function(event) {
-			console.log('new selected value:', $anim.val());
 			config_json['current_animation'] = $anim.val();
 			$.ajax('post_config.php', {
 				data: JSON.stringify(config_json),
 				contentType: 'application/json',
 				type: 'POST',
 				success: function(response) {
-					console.log('post response = ', response);
 					if (!!response['success']) {
 						console.log('Config updated successfully');
 					}
