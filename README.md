@@ -34,13 +34,14 @@ Make sure the proid of your web server can _write_ to this file. In my case it w
 
 ```
 sudo chown www-data.www-data /var/www/html/starlight/config.json
+sudo chmod 644 /var/www/html/starlight/config.json
 ```
 
 ### Apache2 setup
 
 This is optional, but it helps to prevent browser caching on the `config.json` file.
 
-To that end, install `mod_headers` and `mod_rewrite`:
+To that end, install `mod_headers` and `mod_rewrite` in Apache2:
 
 ```
 sudo a2enmod rewrite
