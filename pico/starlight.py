@@ -389,8 +389,8 @@ class Pulse(Animation):
         COLOUR = config.get('colour', 0.5)
         
         # config properties to adjust the implementation
-        ADJUST_BRIGHTNESS = config.get('adjust_brightness', false)
-        ADJUST_SATURATION = config.get('adjust_saturation', false)
+        ADJUST_BRIGHTNESS = config.get('adjust_brightness', False)
+        ADJUST_SATURATION = config.get('adjust_saturation', False)
 
         offset = 0
 
